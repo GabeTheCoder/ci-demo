@@ -4,18 +4,15 @@ import React, { useState } from 'react';
 import './App.css';
 import logo from './logo.svg'
 
-const App = props => {
+import Search from './Search';
 
-    const [result, setResult] = useState(null);
+const App = props => {
 
     return (
         <div className="App">
             <img src={logo} className="App-logo" alt="logo" />
 
-            {result}
-            <button onClick={() => setResult('test')}>
-                update
-            </button>
+            <Search />
         </div>
     );
 
